@@ -40,13 +40,15 @@
         });
         
         domMap.sign_clear.on("click",function(){
-            claerImg();
+          clearImg();
           rewrite();
-        })
+        });
        
       /*清除图片*/
       function clearImg(){
+        console.log(domMap.sign_show[0]);
         domMap.sign_show[0].innerHTML = "";
+        
       }
       
         /*根据坐标获取绘图坐标*/
@@ -142,10 +144,6 @@
         flag = 0;
       }
       
-      //图片清除
-      function claerImg(){
-            domMap.sign_show.innerHTML="";
-      }
       
       /*rewrite*/
       function rewrite(){

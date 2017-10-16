@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body{
+        margin:0;
+        padding:0;
+    }
+    .assin_img span{
+        display:inline-block;
+        width:100px;
+        height:45px;
+        border:1px solid #ddd;
+    }
+    #canvasEdit{
+        margin:100px;
+        border:5px solid #ddd;
+    }
+</style>
+<body>
+    <div class="canvasDiv">
+       <div id="canvas_area">
+           <canvas id="canvasEdit" width="300" height="200"></canvas>
+       </div>
+    </div>
+    <div class="assin_img">
+        <span id="sign_show"></span>
+    </div>
+    <div>
+        <button id="sign_clear">清除</button>
+        <button id="sign_ok">确认</button>
+    </div>
+</body>
+<script src="../jquery.min.js"></script>
+<script src="./index.js"></script>
+<script>
+  $(function(){
+    //初始化动作，根据DOM的ID不同进行自定义，如果不写则内部默认取这四个
+    $().esign("canvasEdit", "sign_show", "sign_clear", "sign_ok");
+
+  });
+</script>
+</html>

@@ -46,7 +46,6 @@
        
       /*清除图片*/
       function clearImg(){
-        console.log(domMap.sign_show[0]);
         domMap.sign_show[0].innerHTML = "";
         
       }
